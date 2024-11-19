@@ -42,11 +42,28 @@
             font-size: 1.1em;
             color: #222;
         }
-        .hero-section img {
+        .recipe-frame img {
             width: 100%;
             max-width: 500px;
             border-radius: 10px;
             margin: 15px 0;
+        }
+        .share-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff8000;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .share-button:hover {
+            background-color: #e67300;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         .previous-recipes {
             margin-top: 20px;
@@ -98,6 +115,9 @@
             font-size: 20px;
             color: #125fca;
         }
+        .social-icons a i {
+            font-size: 24px;
+        }
         .social-icons a:hover {
             color: #1a3cab;
         }
@@ -113,6 +133,8 @@
             }
         }
     </style>
+    <!-- Font Awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -124,7 +146,7 @@
                 <h2>Recipe of the Week: Creamy Alfredo Pasta</h2>
                 <p>Discover the secrets of a creamy, delicious weeknight meal.</p>
                 <img src="pasta.jpg" alt="Creamy Alfredo Pasta">
-                <button onclick="alert('Share on social media!')">Share this Recipe</button>
+                <a href="#" class="share-button">Share this Recipe</a>
             </div>
         </div>
 
@@ -154,10 +176,10 @@
         <!-- Social Media Sharing -->
         <div class="social-icons">
             <p>Share with friends:</p>
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">TikTok</a>
-            <a href="#" target="_blank">Pinterest</a>
+            <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" target="_blank" title="Pinterest"><i class="fab fa-pinterest"></i></a>
         </div>
     </div>
 
