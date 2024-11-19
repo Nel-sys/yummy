@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Yummy Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Weekly Yummy Recipes</div>
+        <nav>
+            <a href="#weekly-recipe">This Week</a>
+            <a href="#previous-recipe">Previous Recipes</a>
+            <a href="#calorie-calculator">Calorie Calculator</a>
+        </nav>
+    </header>
+
+    <!-- Featured Recipe Section -->
+    <section id="weekly-recipe" class="hero-section">
+        <div class="hero-content">
+            <h1>Recipe of the Week: Creamy Alfredo Pasta</h1>
+            <p>A quick and delicious pasta dish that's perfect for the weeknight!</p>
+            <button onclick="shareRecipe()">Share this Recipe</button>
+        </div>
+        <img src="pasta.jpg" alt="Creamy Alfredo Pasta" class="hero-image">
+    </section>
+
+    <!-- Previous Week Recipe -->
+    <section id="previous-recipe" class="previous-recipe-section">
+        <h2>Previous Recipe</h2>
+        <a href="previous-recipe.html" class="previous-link">
+            <img src="lasagna.jpg" alt="Lasagna" class="previous-thumbnail">
+            <p>Click here to view last week's recipe: Classic Lasagna</p>
+        </a>
+    </section>
+
+    <!-- Calorie Calculator -->
+    <section id="calorie-calculator" class="calorie-section">
+        <h2>Calorie Calculator</h2>
+        <form id="calorie-form">
+            <label for="ingredient">Ingredient:</label>
+            <input type="text" id="ingredient" placeholder="e.g., Chicken Breast">
+            <label for="amount">Amount (grams):</label>
+            <input type="number" id="amount" placeholder="e.g., 100">
+            <button type="button" onclick="calculateCalories()">Add Ingredient</button>
+        </form>
+        <div id="calorie-summary">
+            <h3>Total Calories:</h3>
+            <p id="total-calories">0</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Love our recipes? Share with your friends!</p>
+        <div class="social-icons">
+            <a href="#" class="icon facebook">Facebook</a>
+            <a href="#" class="icon instagram">Instagram</a>
+            <a href="#" class="icon tiktok">TikTok</a>
+            <a href="#" class="icon pinterest">Pinterest</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
